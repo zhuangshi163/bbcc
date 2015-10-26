@@ -1,0 +1,12 @@
+[2015-08-31 14:30:51] /admin/index.php?act=dashboard&op=statistics ( act=dashboard&op=statistics ) 
+ERR: Db Error: Table 'bbcc.bbcc_cms_article' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `bbcc_cms_article` WHERE ( article_state = '2' ) LIMIT 1  
+[2015-08-31 14:30:51] /admin/index.php?act=dashboard&op=statistics ( act=dashboard&op=statistics ) 
+ERR: Db Error: Table 'bbcc.bbcc_circle' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `bbcc_circle` WHERE ( circle_status = '2' ) LIMIT 1  
+[2015-08-31 19:28:59] /admin/index.php?act=dashboard&op=statistics ( act=dashboard&op=statistics ) 
+ERR: Db Error: Table 'bbcc.bbcc_cms_article' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `bbcc_cms_article` WHERE ( article_state = '2' ) LIMIT 1  
+[2015-08-31 19:28:59] /admin/index.php?act=dashboard&op=statistics ( act=dashboard&op=statistics ) 
+ERR: Db Error: Table 'bbcc.bbcc_circle' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `bbcc_circle` WHERE ( circle_status = '2' ) LIMIT 1  

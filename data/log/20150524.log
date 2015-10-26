@@ -1,0 +1,72 @@
+[2015-05-24 19:45:34] / ( act=index&op=index ) 
+ERR: Db Error: Table 'newb2b2c.souho_groupbuy' doesn't exist
+SELECT * FROM `souho_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1432467933' ) AND ( end_time > '1432467933' ) ORDER BY recommended desc LIMIT 4  
+[2015-05-24 19:45:34] / ( act=index&op=index ) 
+ERR: Db Error: Table 'newb2b2c.souho_p_xianshi_goods' doesn't exist
+SELECT * FROM `souho_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1432467933' ) AND ( end_time > '1432467933' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2015-05-24 19:45:34] / ( act=index&op=index ) 
+ERR: Db Error: Table 'newb2b2c.souho_web' doesn't exist
+SELECT * FROM `souho_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2015-05-24 19:45:45] / ( act=index&op=index ) 
+ERR: Db Error: Table 'newb2b2c.souho_groupbuy' doesn't exist
+SELECT * FROM `souho_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1432467944' ) AND ( end_time > '1432467944' ) ORDER BY recommended desc LIMIT 4  
+[2015-05-24 19:45:45] / ( act=index&op=index ) 
+ERR: Db Error: Table 'newb2b2c.souho_p_xianshi_goods' doesn't exist
+SELECT * FROM `souho_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1432467944' ) AND ( end_time > '1432467944' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2015-05-24 19:45:45] / ( act=index&op=index ) 
+ERR: Db Error: Table 'newb2b2c.souho_web' doesn't exist
+SELECT * FROM `souho_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2015-05-24 19:45:56] /shop/index.php?act=show_groupbuy&op=index ( act=show_groupbuy&op=index ) 
+ERR: Db Error: Table 'newb2b2c.souho_groupbuy_price_range' doesn't exist
+SELECT * FROM `souho_groupbuy_price_range` ORDER BY range_start LIMIT 30  
+[2015-05-24 19:45:56] /shop/index.php?act=show_groupbuy&op=index ( act=show_groupbuy&op=index ) 
+ERR: Db Error: Table 'newb2b2c.souho_groupbuy' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `souho_groupbuy` WHERE ( recommended = '1' ) AND ( is_vr = '0' ) AND ( state = '20' ) AND ( start_time < '1432467954' ) AND ( end_time > '1432467954' ) LIMIT 1  
+[2015-05-24 19:45:56] /shop/index.php?act=show_groupbuy&op=index ( act=show_groupbuy&op=index ) 
+ERR: Db Error: Table 'newb2b2c.souho_groupbuy' doesn't exist
+SELECT * FROM `souho_groupbuy` WHERE ( recommended = '1' ) AND ( is_vr = '0' ) AND ( state = '20' ) AND ( start_time < '1432467954' ) AND ( end_time > '1432467954' ) ORDER BY state asc LIMIT 0,9  
+[2015-05-24 19:45:56] /shop/index.php?act=show_groupbuy&op=index ( act=show_groupbuy&op=index ) 
+ERR: Db Error: Table 'newb2b2c.souho_groupbuy' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `souho_groupbuy` WHERE ( recommended = '1' ) AND ( is_vr = '1' ) AND ( state = '20' ) AND ( start_time < '1432467954' ) AND ( end_time > '1432467954' ) LIMIT 1  
+[2015-05-24 19:45:56] /shop/index.php?act=show_groupbuy&op=index ( act=show_groupbuy&op=index ) 
+ERR: Db Error: Table 'newb2b2c.souho_groupbuy' doesn't exist
+SELECT * FROM `souho_groupbuy` WHERE ( recommended = '1' ) AND ( is_vr = '1' ) AND ( state = '20' ) AND ( start_time < '1432467954' ) AND ( end_time > '1432467954' ) ORDER BY state asc LIMIT 0,9  
+[2015-05-24 19:46:01] /shop/index.php?act=show_groupbuy&op=index ( act=show_groupbuy&op=index ) 
+ERR: Db Error: Table 'newb2b2c.souho_groupbuy' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `souho_groupbuy` WHERE ( recommended = '1' ) AND ( is_vr = '0' ) AND ( state = '20' ) AND ( start_time < '1432467960' ) AND ( end_time > '1432467960' ) LIMIT 1  
+[2015-05-24 19:46:01] /shop/index.php?act=show_groupbuy&op=index ( act=show_groupbuy&op=index ) 
+ERR: Db Error: Table 'newb2b2c.souho_groupbuy' doesn't exist
+SELECT * FROM `souho_groupbuy` WHERE ( recommended = '1' ) AND ( is_vr = '0' ) AND ( state = '20' ) AND ( start_time < '1432467960' ) AND ( end_time > '1432467960' ) ORDER BY state asc LIMIT 0,9  
+[2015-05-24 19:46:01] /shop/index.php?act=show_groupbuy&op=index ( act=show_groupbuy&op=index ) 
+ERR: Db Error: Table 'newb2b2c.souho_groupbuy' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `souho_groupbuy` WHERE ( recommended = '1' ) AND ( is_vr = '1' ) AND ( state = '20' ) AND ( start_time < '1432467960' ) AND ( end_time > '1432467960' ) LIMIT 1  
+[2015-05-24 19:46:01] /shop/index.php?act=show_groupbuy&op=index ( act=show_groupbuy&op=index ) 
+ERR: Db Error: Table 'newb2b2c.souho_groupbuy' doesn't exist
+SELECT * FROM `souho_groupbuy` WHERE ( recommended = '1' ) AND ( is_vr = '1' ) AND ( state = '20' ) AND ( start_time < '1432467960' ) AND ( end_time > '1432467960' ) ORDER BY state asc LIMIT 0,9  
+[2015-05-24 19:46:07] /shop/index.php?act=show_groupbuy&op=index ( act=show_groupbuy&op=index ) 
+ERR: Db Error: Table 'newb2b2c.souho_groupbuy' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `souho_groupbuy` WHERE ( recommended = '1' ) AND ( is_vr = '0' ) AND ( state = '20' ) AND ( start_time < '1432467966' ) AND ( end_time > '1432467966' ) LIMIT 1  
+[2015-05-24 19:46:07] /shop/index.php?act=show_groupbuy&op=index ( act=show_groupbuy&op=index ) 
+ERR: Db Error: Table 'newb2b2c.souho_groupbuy' doesn't exist
+SELECT * FROM `souho_groupbuy` WHERE ( recommended = '1' ) AND ( is_vr = '0' ) AND ( state = '20' ) AND ( start_time < '1432467966' ) AND ( end_time > '1432467966' ) ORDER BY state asc LIMIT 0,9  
+[2015-05-24 19:46:07] /shop/index.php?act=show_groupbuy&op=index ( act=show_groupbuy&op=index ) 
+ERR: Db Error: Table 'newb2b2c.souho_groupbuy' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `souho_groupbuy` WHERE ( recommended = '1' ) AND ( is_vr = '1' ) AND ( state = '20' ) AND ( start_time < '1432467966' ) AND ( end_time > '1432467966' ) LIMIT 1  
+[2015-05-24 19:46:07] /shop/index.php?act=show_groupbuy&op=index ( act=show_groupbuy&op=index ) 
+ERR: Db Error: Table 'newb2b2c.souho_groupbuy' doesn't exist
+SELECT * FROM `souho_groupbuy` WHERE ( recommended = '1' ) AND ( is_vr = '1' ) AND ( state = '20' ) AND ( start_time < '1432467966' ) AND ( end_time > '1432467966' ) ORDER BY state asc LIMIT 0,9  
+[2015-05-24 19:46:11] /mobile/index.php?act=index ( act=index&op=index ) 
+ERR: Db Error: Table 'newb2b2c.souho_mb_special_item' doesn't exist
+SELECT * FROM `souho_mb_special_item` WHERE ( special_id = '0' ) AND ( item_usable = '1' ) ORDER BY item_sort asc LIMIT 1000  
+[2015-05-24 19:46:41] /admin/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: Db Error: Table 'newb2b2c.souho_admin' doesn't exist
+SELECT * FROM `souho_admin` as `admin`  WHERE  admin_name = '搜虎精品社区' and admin_password = '7104cde748d4b90afd4b815a6453246e'
+[2015-05-24 19:50:35] / ( act=index&op=index ) 
+ERR: Db Error: Table 'newb2b2c.souho_groupbuy' doesn't exist
+SELECT * FROM `souho_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1432468234' ) AND ( end_time > '1432468234' ) ORDER BY recommended desc LIMIT 4  
+[2015-05-24 19:50:35] / ( act=index&op=index ) 
+ERR: Db Error: Table 'newb2b2c.souho_p_xianshi_goods' doesn't exist
+SELECT * FROM `souho_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1432468234' ) AND ( end_time > '1432468234' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2015-05-24 19:50:35] / ( act=index&op=index ) 
+ERR: Db Error: Table 'newb2b2c.souho_web' doesn't exist
+SELECT * FROM `souho_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  

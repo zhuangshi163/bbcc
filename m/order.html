@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<link rel="dns-prefetch" href="//static.weiba.com">
+<meta name="apple-mobile-web-app-title" content="直销">
+<link rel="apple-touch-icon-precomposed"
+	href="http://static.weiba.com/img/apple-touch-icon.png">
+<link rel="apple-touch-icon"
+	href="http://static.weiba.com/img/apple-touch-icon.png">
+<title>订单列表</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+<meta content="telephone=no" name="format-detection">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!-- ▼ CSS -->
+<link rel="stylesheet" type="text/css"
+	href="assets/css/wap/outlet/base.css">
+<link rel="stylesheet" type="text/css"
+	href="assets/css/wap/outlet/newoutlet.css">
+<link rel="stylesheet" type="text/css"
+	href="assets/css/iconfont/iconfont.css?t=20150423">
+<!-- ▲ CSS -->
+</head>
+<body wmall-title="宏哥的小店" wmall-icon="http://wx.qlogo.cn/mmopen/UVe4NAnniamHlsRMjiadib2EH8H1ondJ9DyeicPrN4vOgdKo4vFib0XBQrApxsJiaEz9KZvmljPmibJcc4iaQtzNnukFRiaZiaeq9QvXZ5/0"
+	wmall-link="http://Rhztzw.shop.bama555.com/?did=698436"
+	wmall-desc="淘正饰品为广大藏友提供鉴赏知识，行业内幕，美品欣赏等诸多内容，为全国文玩爱好者，从业者及各方合作伙伴提供咨询，论坛交流，等多元化和跨界合作为一体的整合服务。您的支持是我们发展的最大动力！">
+	<div id="views">
+		<div id="view-center" class="page-view page-o-oreder">
+
+
+		</div>
+	</div>
+
+	<div class="loading" style="display: none;">
+		<div class="loader">
+			<i class="dot-pink"></i> <i class="dot-blue"></i>
+		</div>
+	</div>
+	
+	<script type="text/html" id="order-list-tmpl">
+			<header class="top-tab">
+				<ul class="clearfix">
+					<li class="<%if (status == '' || status == null){%>on <%}%>js-order-tab" data-status="all"><a href="order.html">所有订单</a></li>
+					<li class="<%if (status == 20){%>on <%}%>js-order-tab" data-status="20"><a href="order.html?status=20">已付款</a></li>
+					<li class="<%if (status == 10){%>on <%}%>js-order-tab" data-status="10"><a href="order.html?status=10">待付款</a></li>
+					<li class="<%if (status == 40){%>on <%}%>js-order-tab" data-status="40"><a href="order.html?status=40">已完成</a></li>
+				</ul>
+			</header>
+			<div class="js-count">
+			<%if (order_group_list.length >0){%>
+				<div class="count-text">
+					共找到<span>4</span>笔订单，分销总收入<span>132.90</span>
+					<p>
+						一级<span>3</span>笔，二级<span>1</span>笔，三级<span>0</span>笔。
+					</p>
+				</div>
+			<%}%>
+			</div>
+			<div class="earn-list">
+
+	
+				<ul class="js-order-cate">
+<%if (order_group_list.length >0){%>
+                    <%for(var i = 0;i<order_group_list.length;i++){
+                        var orderlist = order_group_list[i].order_list;
+                    %>
+                            <% for(var j = 0;j<orderlist.length;j++){
+                                var order_goods = orderlist[j].extend_order_goods;
+                            %>
+					<li class="panel"><div
+							class="earn-info clearfix js-earn-info">
+							<div class="left">
+								<div class="earn-date"><%=$getLocalTime(order_group_list[i].add_time)%></div>
+								<div class="earn-id"><%=order_group_list[i].level%>： <%=orderlist[j].order_sn%></div>
+							</div>
+							<div class="right">
+								<p class="price">+<%=orderlist[j].level_money_sum%></p>
+								<div class="status red">待付款</div>
+							</div>
+						</div>
+						<div class="order-detail" style="display:none;">
+							<div class="outlet-info">
+								<div>
+									<span>分销商：</span><%=orderlist[j].wx_shop_name%>
+								</div>
+							</div>
+							<dl class="goods-list">
+ <%for (var k = 0;k<order_goods.length;k++){%>
+								<dd class="clearfix">
+									<a href="<%=WapSiteUrl%>/tmpl/product_detail.html?goods_id=<%=order_goods[k].goods_id%>">
+										<div class="goods-image">
+											<img
+												src="<%=order_goods[k].goods_image_url%>"
+												alt="">
+										</div>
+										<div class="goods-name"><%=order_goods[k].goods_name%></div>
+										<div class="goods-price">
+											<span>X<%=order_goods[k].goods_num%></span> <span class="gray">+<%=orderlist[j].level_money%></span>
+										</div>
+									</a>
+								</dd>
+<%}%>
+							</dl>
+							<div class="address">
+								<div>
+									<span>客户名：</span>尧哥 电商CTO
+								</div>
+								<div>
+									<span>收货人：</span>电商导导师（131****8565）
+								</div>
+								<div>
+									<span>收货地址：</span>黑龙江省双鸭山市尖山区***
+								</div>
+							</div>
+						</div></li>
+<%}%>
+<%}%>
+<!--
+					<li class="panel"><div class="earn-info clearfix js-earn-info">
+							<div class="left">
+								<div class="earn-date">09-08 16:22</div>
+								<div class="earn-id">二级订单： 2015090801009110</div>
+							</div>
+							<div class="right">
+								<p class="price t_right">+35.80</p>
+								<div class="status gray">已过期</div>
+							</div>
+						</div></li>
+					<li class="panel"><div class="earn-info clearfix js-earn-info">
+							<div class="left">
+								<div class="earn-date">09-08 16:07</div>
+								<div class="earn-id">一级订单： 2015090801047402</div>
+							</div>
+							<div class="right">
+								<p class="price t_right">+40.20</p>
+								<div class="status gray">已过期</div>
+							</div>
+						</div></li>
+					<li class="panel"><div class="earn-info clearfix js-earn-info">
+							<div class="left">
+								<div class="earn-date">09-08 16:06</div>
+								<div class="earn-id">一级订单： 2015090801062263</div>
+							</div>
+							<div class="right">
+								<p class="price t_right">+44.85</p>
+								<div class="status gray">已过期</div>
+							</div>
+						</div></li>-->
+
+					<%}else {%>
+					<div class="list-empty">
+						<i class="iconfont"></i>
+						<p>亲，您暂无分销订单信息！</p>
+					</div>
+					<%}%>
+				</ul>
+		</div>
+ 	</script>
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+    <script type="text/javascript" src="js/template.js"></script>
+    <script type="text/javascript" src="js/config.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/simple-plugin.js"></script>
+    <script type="text/javascript" src="js/tmpl/common-top.js"></script>
+    <script type="text/javascript" src="js/outlet_order_list.js"></script>
+    <script type="text/javascript" src="js/tmpl/footer.js"></script>
+    <script type="text/javascript">
+
+    </script>
+</body>
+</html>

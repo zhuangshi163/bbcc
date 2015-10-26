@@ -1,0 +1,24 @@
+[2015-08-03 16:40:10] /admin/index.php?act=dashboard&op=statistics ( act=dashboard&op=statistics ) 
+ERR: Db Error: Table 'newb2b2c.shopnc_cms_article' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `shopnc_cms_article` WHERE ( article_state = '2' ) LIMIT 1  
+[2015-08-03 16:40:10] /admin/index.php?act=dashboard&op=statistics ( act=dashboard&op=statistics ) 
+ERR: Db Error: Table 'newb2b2c.shopnc_circle' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `shopnc_circle` WHERE ( circle_status = '2' ) LIMIT 1  
+[2015-08-03 16:41:46] /admin/index.php?act=dashboard&op=statistics ( act=dashboard&op=statistics ) 
+ERR: Db Error: Table 'newb2b2c.shopnc_cms_article' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `shopnc_cms_article` WHERE ( article_state = '2' ) LIMIT 1  
+[2015-08-03 16:41:46] /admin/index.php?act=dashboard&op=statistics ( act=dashboard&op=statistics ) 
+ERR: Db Error: Table 'newb2b2c.shopnc_circle' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `shopnc_circle` WHERE ( circle_status = '2' ) LIMIT 1  
+[2015-08-03 16:41:50] /admin/index.php?act=dashboard&op=statistics ( act=dashboard&op=statistics ) 
+ERR: Db Error: Table 'newb2b2c.shopnc_cms_article' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `shopnc_cms_article` WHERE ( article_state = '2' ) LIMIT 1  
+[2015-08-03 16:41:50] /admin/index.php?act=dashboard&op=statistics ( act=dashboard&op=statistics ) 
+ERR: Db Error: Table 'newb2b2c.shopnc_circle' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `shopnc_circle` WHERE ( circle_status = '2' ) LIMIT 1  
+[2015-08-03 17:17:11] /admin/index.php?act=dashboard&op=statistics ( act=dashboard&op=statistics ) 
+ERR: Db Error: Table 'newb2b2c.shopnc_cms_article' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `shopnc_cms_article` WHERE ( article_state = '2' ) LIMIT 1  
+[2015-08-03 17:17:11] /admin/index.php?act=dashboard&op=statistics ( act=dashboard&op=statistics ) 
+ERR: Db Error: Table 'newb2b2c.shopnc_circle' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `shopnc_circle` WHERE ( circle_status = '2' ) LIMIT 1  
